@@ -351,16 +351,6 @@ Areas where we especially need help:
 
 ---
 
-## 🗺️ Roadmap
-
-- [ ] **Cloud mode** (optional) - remote worker clusters
-- [ ] **Plugin marketplace** - share custom agents
-- [ ] **Advanced scheduling** - cron-like task scheduling
-- [ ] **Multi-tenant support** - team collaboration features
-- [ ] **Visual workflow builder** - drag-and-drop agent graphs
-
----
-
 ## 📄 License
 
 Apache-2.0 — see [LICENSE](./LICENSE).
