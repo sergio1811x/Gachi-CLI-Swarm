@@ -131,13 +131,13 @@ describe('notification settings', () => {
     const group = screen.getByRole('radiogroup', { name: 'Sound notifications' })
     expect(group).toBeInTheDocument()
     // Provider defaults are persisted on mount.
-    expect(readSavedSettings().sound).toBe('sound3')
+    expect(readSavedSettings().sound).toBe('sound1')
 
     fireEvent.click(screen.getByRole('radio', { name: /Sound 2/ }))
     fireEvent.click(screen.getByRole('radio', { name: /Detailed/ }))
 
     // Draft state: nothing persisted until the user saves.
-    expect(readSavedSettings().sound).toBe('sound3')
+    expect(readSavedSettings().sound).toBe('sound1')
     expect(screen.getByTestId('settings-save')).toBeEnabled()
 
     fireEvent.click(screen.getByTestId('settings-save'))
@@ -158,12 +158,12 @@ describe('notification settings', () => {
     const save = screen.getByTestId('settings-save')
     expect(save).toBeDisabled()
 
-    fireEvent.click(screen.getByRole('radio', { name: /Sound 1/ }))
+    fireEvent.click(screen.getByRole('radio', { name: /Sound 3/ }))
     expect(save).toBeEnabled()
 
     fireEvent.click(screen.getByRole('button', { name: 'Cancel' }))
     expect(screen.queryByTestId('notification-settings')).not.toBeInTheDocument()
-    expect(readSavedSettings().sound).toBe('sound3')
+    expect(readSavedSettings().sound).toBe('sound1')
   })
 
   test('previews a sound without selecting it', () => {
@@ -172,7 +172,7 @@ describe('notification settings', () => {
     fireEvent.click(screen.getByTestId('topbar-settings'))
     fireEvent.click(screen.getByRole('button', { name: 'Preview Sound 2 sound' }))
 
-    expect(readSavedSettings().sound).toBe('sound3')
+    expect(readSavedSettings().sound).toBe('sound1')
     expect(playedAudioSources).toEqual(['/sounds/gachi-sound-2.mp3'])
   })
 

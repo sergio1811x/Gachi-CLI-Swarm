@@ -34,7 +34,7 @@ export const NOTIFICATION_SETTINGS_KEY = 'gachi.notification.settings'
 const DEFAULT_SETTINGS: NotificationSettings = {
   desktop: false,
   detail: 'brief',
-  sound: 'sound3',
+  sound: 'sound1',
 }
 
 const soundAssets: Record<Exclude<NotificationSound, 'off'>, string> = {
