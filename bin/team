@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+// Copied verbatim into dist/bin by scripts/prepare-build-artifacts.mjs, so the
+// CLI module must be resolved from whichever copy executes (repo bin/ or
+// dist/bin/) — a single static relative path breaks one of the two layouts.
+import { existsSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+
+const scriptDir = dirname(fileURLToPath(import.meta.url))
+const candidates = [
+  join(scriptDir, '../dist/src/cli/team.js'),
+  join(scriptDir, '../src/cli/team.js'),
+]
+const cliPath = candidates.find((candidate) => existsSync(candidate)) ?? candidates[0]
+
+const { runTeamCommand } = await import(pathToFileURL(cliPath).href)
+
+void runTeamCommand(process.argv.slice(2)).catch((error) => {
+  console.error(error instanceof Error ? error.message : String(error))
+  process.exit(1)
+})

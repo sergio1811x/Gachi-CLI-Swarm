@@ -1,0 +1,26 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.env
+.remember/
+.remember.md
+.screenshots-prod/
+.gachi/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.idea/
+.claude/
+AUDIT_APPLICATION.md
+EVALUATION_AND_ROADMAP.md
+HANDOFF_FOR_ORCHESTRATOR.md
+TASKS_BACKLOG.md
+ROADMAP*.txt
+
+# local knowledge-graph artifacts (graphify)
+graphify-out/

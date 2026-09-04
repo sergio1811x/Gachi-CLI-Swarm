@@ -1,0 +1,4 @@
+Gemini CLI ✦
+╭───────────╮
+│ stats: 88% context left │ total tokens 5,001
+╰───────────╯

@@ -1,0 +1,2 @@
+Codex CLI v0.9.3
+[2026-08-26T02:40Z] [90m[79%] context left[0m · total tokens: 48,210

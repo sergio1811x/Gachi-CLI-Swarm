@@ -1,0 +1,3 @@
+[?25l[2Jopencode ▸ session main
+tokens used: 12,345
+[32mcontext left: 61%[0m

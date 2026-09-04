@@ -1,0 +1,3 @@
+[2K[1m✳ +3 more (esc to interrupt · ctrl+t to expand)[0m
+⎿ Read(file.rs)
+[36m  Context left until auto-compact: 34%[0m

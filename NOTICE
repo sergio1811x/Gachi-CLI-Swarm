@@ -1,0 +1,10 @@
+Gachi CLI Swarm
+Copyright 2026 Sergio1811x
+
+This product is licensed under the Apache License, Version 2.0
+(see LICENSE).
+
+This product includes optional marketplace prompt snapshots from
+third-party projects. Their upstream license files are preserved under
+the packaged vendor marketplace directories when those snapshots are
+included in a release.

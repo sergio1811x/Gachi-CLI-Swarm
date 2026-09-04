@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+# Vendored marketplace files keep original endings
+vendor/marketplace/** -text
+
+# Test fixtures with golden output
+tests/fixtures/** -text
+
+# Binary files
+*.webp binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.mp3 binary
+*.svg text
+*.sh text eol=lf

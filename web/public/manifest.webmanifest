@@ -1,0 +1,53 @@
+{
+  "name": "Gachi CLI Swarm — Multi-agent CLI workbench",
+  "short_name": "Gachi CLI Swarm",
+  "description": "Browser-native multi-CLI agent collaboration workbench. Coordinate Claude Code, Codex, Gemini, OpenCode as a real PTY team.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#171717",
+  "background_color": "#171717",
+  "categories": ["developer", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/wide-overview.png",
+      "sizes": "1672x941",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Gachi CLI Swarm multi-agent workspace overview"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Workspace",
+      "short_name": "Add",
+      "description": "Create a new workspace",
+      "url": "/?action=add-workspace",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
